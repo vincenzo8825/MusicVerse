@@ -4,6 +4,7 @@ import HomePage from './pages/Home';
 import ArtistPage from './pages/Artist';
 import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Importa i moduli JavaScript di Bootstrap
 
 function App() {
   return (
