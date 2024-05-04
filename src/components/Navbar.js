@@ -1,8 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './../css/navbar.css'; // Assicurati di avere il percorso corretto al tuo file CSS
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import './../css/navbar.css';
 
 function Navbar() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [errorMessage, setErrorMessage] = useState(''); // Aggiungi uno stato per il messaggio di errore
+  const navigate = useNavigate();
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    const artists = ['Michael Jackson', 'The Beatles', 'Bob Dylan', 'Vasco Rossi', 'Beyoncé', 'David Bowie', 'Frank Sinatra', 'Queen', 'Elvis Presley', 'Madonna'];
+    const foundArtist = artists.find(artist => artist.toLowerCase() === searchQuery.toLowerCase());
+    if (foundArtist) {
+      navigate(`/artisti/${foundArtist.replace(/\s+/g, '')}`);
+      setErrorMessage(''); // Resetta il messaggio di errore se l'artista è stato trovato
+    } else {
+      setErrorMessage('Artista non trovato. Si prega di inserire un altro nome.');
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
@@ -21,13 +37,12 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/music">Music</Link>
             </li>
-            {/* Aggiungi altri link qui per le altre pagine del sito */}
           </ul>
-          <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <form className="d-flex" onSubmit={handleSearch}>
+            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
             <button className="btn btn-outline-light" type="submit">Search</button>
           </form>
-          {/* Aggiungi ulteriori elementi qui, ad esempio un pulsante di accesso */}
+          {errorMessage && <div className="alert alert-danger mt-3">{errorMessage}</div>} {/* Mostra il messaggio di errore se presente */}
         </div>
       </div>
     </nav>

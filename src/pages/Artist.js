@@ -11,9 +11,10 @@ function Artist() {
     { id: 5, name: 'Bob Dylan', songs: ['Blowin\' in the Wind', 'Like a Rolling Stone', 'Knockin\' on Heaven\'s Door'] },
     { id: 6, name: 'Queen', songs: ['Bohemian Rhapsody', 'We Will Rock You', 'Another One Bites the Dust'] },
     { id: 7, name: 'Frank Sinatra', songs: ['My Way', 'Fly Me to the Moon', 'New York, New York'] },
-    { id: 8, name: 'Beyoncé', songs: ['Single Ladies (Put a Ring on It)', 'Crazy in Love', 'Halo'] },
+    { id: 8, name: 'Beyonce', songs: ['Single Ladies (Put a Ring on It)', 'Crazy in Love', 'Halo'] },
     { id: 9, name: 'The Rolling Stones', songs: ['Paint It Black', 'Satisfaction', 'Angie'] },
     { id: 10, name: 'David Bowie', songs: ['Space Oddity', 'Heroes', 'Let\'s Dance'] },
+    { id: 11, name: 'Vasco Rossi', songs: ['Vita Spericolata', 'Vivere', 'Albachiara'] },
   ];
 
   return (
