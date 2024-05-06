@@ -1,76 +1,185 @@
-/* Stili per la sezione Hero */
+
+.navbar {
+  background-color: #897a7a;
+  padding: 1rem 0;
+  
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #e8ec00;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+/* Hero Section */
 .hero-section {
-    padding: 100px 0;
-  }
-  
-  .hero-section h1 {
-    font-size: 3rem;
-  }
-  
-  .hero-section p {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Stili per la sezione degli artisti in primo piano */
-  .featured-artists-section {
-    padding: 80px 0;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 40px;
-  }
-  
-  /* Stili per le card degli artisti */
-  .card {
-    margin-bottom: 30px;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .card-text {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Stili per la sezione Call to action */
-  .cta-section {
-    background-color: #f8f9fa;
-    padding: 80px 0;
-    text-align: center;
-  }
-  
-  .cta-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .btn-lg {
-    font-size: 1.25rem;
-    padding: 12px 24px;
-  }
-  
-  /* Stili per il footer */
-  .footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  .footer p {
-    font-size: 1.1rem;
-  }
-  
-  .footer a {
-    color: #fff;
-  }
-  
-  .footer a:hover {
-    color: #ffc107;
-  }
-  
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?concert');
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+  text-align: center;
+  color: #e8ec00;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section .btn-primary {
+  font-size: 1rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 1.5rem;
+  background-color: #e8ec00;
+  border-color: #e8ec00;
+}
+.hero-section .btn-primary:hover{
+  background-color:#b4a5a5 ;
+}
+/* Sections */
+.section-title {
+  font-size:2rem;
+  color: #e8ec00;
+  margin-bottom: 4rem;
+}
+
+.top-artists-section  {
+  background-color: #1C1916;
+  padding: 5rem 0;
+}
+
+.top-artists-section .custom-card {
+  background-color: #1C1916;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.top-artists-section .custom-card:hover {
+  transform: translateY(-10px);
+}
+
+.top-artists-section .card-img-top {
+  border-radius: 1rem;
+}
+
+.top-artists-section .card-body {
+  padding: 2rem;
+}
+
+.top-tracks-section{
+  background-color: #1C1916;
+
+}
+.similar-artists-section{
+  background-color: #1C1916;
+}
+/* Card */
+.card {
+  background-color: #2f2f2f; /* Cambia il colore di sfondo della card */
+  border-radius: 1rem; /* Aumenta il bordo arrotondato della card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra leggera */
+  transition: transform 0.3s ease-in-out; /* Aggiungi una transizione al passaggio del mouse */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Effetto di sollevamento al passaggio del mouse */
+}
+
+.card-img-top {
+  border-radius: 1rem; /* Aumenta il bordo arrotondato dell'immagine superiore della card */
+}
+
+.card-body {
+  padding: 2rem; /* Aumenta lo spazio interno del corpo della card */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Aumenta leggermente la dimensione del titolo della card */
+  color: #ffc107; /* Cambia il colore del titolo della card */
+}
+
+.card-text {
+  font-size: 1rem; /* Aumenta leggermente la dimensione del testo normale nella card */
+  color: #fff; /* Cambia il colore del testo normale nella card */
+}
+
+.card-link {
+  color: #ffc107; /* Cambia il colore dei link nella card */
+  text-decoration: none; /* Rimuove la sottolineatura dai link */
+  font-weight: bold; /* Rendi i link in grassetto */
+  transition: color 0.3s ease-in-out; /* Aggiungi una transizione al colore dei link */
+}
+
+.card-link:hover {
+  color: #e8ec00; /* Cambia il colore del link al passaggio del mouse */
+}
+/* Stile per i pulsanti .btn-outline-dark */
+.btn-outline-dark {
+  color: #ffffff; /* Colore del testo */
+  background-color: transparent; /* Colore di sfondo trasparente */
+  border: 1px solid #343a40; /* Bordo solid */
+  font-size: 1rem; /* Dimensione del carattere */
+  padding: 0.75rem 1.5rem; /* Spaziatura interna */
+  border-radius: 0.25rem; /* Bordo arrotondato */
+  transition: all 0.3s ease; /* Transizione per tutti i cambiamenti */
+}
+
+.btn-outline-dark:hover {
+  background-color: #2F2F2F; /* Colore di sfondo al passaggio del mouse */
+  border-color: #343a40; /* Colore del bordo al passaggio del mouse */
+  color: #ffffff; /* Colore del testo al passaggio del mouse */
+}
+
+/* Stile per i pulsanti .btn-lastfm */
+.btn-outline-dark {
+  color: #ffffff; /* Colore del testo */
+  background-color: #ffc107; /* Colore di sfondo */
+  border: none; /* Nessun bordo */
+  font-size: 1rem; /* Dimensione del carattere */
+  padding: 0.75rem 1.5rem; /* Spaziatura interna */
+  border-radius: 0.25rem; /* Bordo arrotondato */
+  transition: all 0.3s ease; /* Transizione per tutti i cambiamenti */
+}
+
+.btn-outline-dark:hover {
+  background-color: #b4a5a5; /* Colore di sfondo al passaggio del mouse */
+ 
+  color: #ffffff; /* Colore del testo al passaggio del mouse */
+}
+
+
+/* Footer */
+.footer {
+  background-color: #212529;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+
+
+
+/* Footer */
+.footer {
+  background-color: #212529;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin-bottom: 0;
+}
