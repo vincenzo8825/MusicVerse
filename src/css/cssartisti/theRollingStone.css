@@ -1,0 +1,91 @@
+/* rollingstones.css */
+
+.rollingstones-container {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .rollingstones-title {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 2rem;
+  }
+  
+  .rollingstones-info {
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .rollingstones-info p {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .rollingstones-search {
+    margin-bottom: 1rem;
+  }
+  
+  .rollingstones-search input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    margin-right: 0.5rem;
+  }
+  
+  .rollingstones-search button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .rollingstones-lyrics {
+    margin-top: 2rem;
+  }
+  
+  .rollingstones-lyrics h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .rollingstones-lyrics p {
+    color: #333;
+  }
+  
+  .rollingstones-albums {
+    margin-top: 2rem;
+  }
+  
+  .rollingstones-albums h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .rollingstones-album {
+    margin-bottom: 1rem;
+    
+    
+  }
+  
+  .rollingstones-album img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    
+  }
+  
+  .rollingstones-album p {
+    color:#ccc;
+  }
+  
+  /* rollingstones.css */
+  

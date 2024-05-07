@@ -1,0 +1,79 @@
+/* artist.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://source.unsplash.com/1600x900/?music,gray');
+    background-size: cover;
+  }
+  
+  .artist-page {
+    margin: 0 auto;
+    padding: 2rem;
+    background-image: url('https://source.unsplash.com/1600x900/?music,gray');
+    background-size: cover;
+    background-position: center;
+    background-color: #2f2f2f; /* Colore di fallback */
+    border-radius: 0rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .artist-title {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 2rem;
+  }
+  
+  .artist-card {
+    background-color: #2f2f2f;
+    
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .artist-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .artist-card .card-body {
+    padding: 2rem;
+  }
+  
+  .artist-card .card-title {
+    font-size: 1rem;
+    color: #ffc107;
+  }
+  
+  .artist-card .list-group-item {
+    background-color: #2f2f2f;
+    border: none;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  
+  .artist-card .btn-primary {
+    font-size: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 1.5rem;
+    background-color: #e8ec00;
+    border-color: #e8ec00;
+  }
+  
+  .artist-card .btn-primary:hover {
+    background-color: #b4a5a5;
+  }
+  /* artist.css */
+
+.back-to-home {
+    display: block;
+    margin-bottom: 20px;
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-to-home:hover {
+    text-decoration: underline;
+  }
+  

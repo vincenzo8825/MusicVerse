@@ -1,0 +1,88 @@
+/* david-bowie.css */
+
+.david-bowie-container {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .david-bowie-title {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 2rem;
+  }
+  
+  .david-bowie-info {
+    background-color: #2f2f2f;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .david-bowie-info p {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .david-bowie-search {
+    margin-bottom: 1rem;
+  }
+  
+  .david-bowie-search input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    margin-right: 0.5rem;
+  }
+  
+  .david-bowie-search button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .david-bowie-lyrics {
+    margin-top: 2rem;
+  }
+  
+  .david-bowie-lyrics h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .david-bowie-lyrics p {
+    color: #fff;
+  }
+  
+  .david-bowie-albums {
+    margin-top: 2rem;
+  }
+  
+  .david-bowie-albums h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .david-bowie-album {
+    margin-bottom: 1rem;
+  }
+  
+  .david-bowie-album img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .david-bowie-album p {
+    color: #fff;
+  }
+  
+  /* david-bowie.css */
+  

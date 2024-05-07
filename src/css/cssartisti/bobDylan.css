@@ -1,0 +1,88 @@
+/* bob-dylan.css */
+
+.bob-dylan-container {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .bob-dylan-title {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 2rem;
+  }
+  
+  .bob-dylan-info {
+    background-color: #2f2f2f;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .bob-dylan-info p {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .bob-dylan-search {
+    margin-bottom: 1rem;
+  }
+  
+  .bob-dylan-search input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    margin-right: 0.5rem;
+  }
+  
+  .bob-dylan-search button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bob-dylan-lyrics {
+    margin-top: 2rem;
+  }
+  
+  .bob-dylan-lyrics h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .bob-dylan-lyrics p {
+    color: #fff;
+  }
+  
+  .bob-dylan-albums {
+    margin-top: 2rem;
+  }
+  
+  .bob-dylan-albums h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .bob-dylan-album {
+    margin-bottom: 1rem;
+  }
+  
+  .bob-dylan-album img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .bob-dylan-album p {
+    color: #fff;
+  }
+  
+  /* bob-dylan.css */
+  

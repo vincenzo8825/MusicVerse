@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-left">
           <h3 className="footer-heading">MusicVerse</h3>
-          <p className="footer-text">Connect with us:</p>
+          <p className="footer-text">Explore the world of music with us:</p>
         </div>
         <div className="footer-right">
           <div className="footer-social">

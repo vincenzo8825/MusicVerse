@@ -1,0 +1,88 @@
+/* beatles.css */
+
+.beatles-container {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .beatles-title {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 2rem;
+  }
+  
+  .beatles-info {
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .beatles-info p {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .beatles-search {
+    margin-bottom: 1rem;
+  }
+  
+  .beatles-search input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    margin-right: 0.5rem;
+  }
+  
+  .beatles-search button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .beatles-lyrics {
+    margin-top: 2rem;
+  }
+  
+  .beatles-lyrics h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .beatles-lyrics p {
+    color: #333;
+  }
+  
+  .beatles-albums {
+    margin-top: 2rem;
+  }
+  
+  .beatles-albums h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .beatles-album {
+    margin-bottom: 1rem;
+  }
+  
+  .beatles-album img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .beatles-album p {
+    color: #ccc;
+  }
+  
+  /* beatles.css */
+  

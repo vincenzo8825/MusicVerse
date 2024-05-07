@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './../css/home.css';
-
+import'./../css/Footer.css';
 function Home() {
   const [topArtists, setTopArtists] = useState([]);
   const [topTracks, setTopTracks] = useState([]);
@@ -12,16 +12,19 @@ function Home() {
 // Accesso alla chiave API da .env
 const apiKey = process.env.REACT_APP_API_KEY;
 
-  useEffect(() => {
-    const fetchTopArtists = async () => {
-      try {
-        const response = await fetch(`http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${apiKey}&format=json&limit=10`);
-        const data = await response.json();
-        setTopArtists(data?.artists?.artist || []);
-      } catch (error) {
-        console.error('Errore nel recupero dei top artisti:', error);
-      }
-    };
+const fetchTopArtists = async () => {
+  try {
+    const response = await fetch(`http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${apiKey}&format=json&limit=10`);
+    if (!response.ok) {
+      throw new Error('Errore nella richiesta HTTP: ' + response.status);
+    }
+    const data = await response.json();
+    setTopArtists(data?.artists?.artist || []);
+  } catch (error) {
+    console.error('Errore nel recupero dei top artisti:', error);
+  }
+};
+
 
     const fetchTopTracks = async () => {
       try {
@@ -47,7 +50,7 @@ const apiKey = process.env.REACT_APP_API_KEY;
     fetchTopArtists();
     fetchTopTracks();
     fetchSimilarArtists();
-  }, );
+  
 
   return (
     <div>

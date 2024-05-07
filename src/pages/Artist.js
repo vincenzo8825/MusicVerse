@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './../css/artist.css';
 
 function Artist() {
   // Dati degli artisti
@@ -18,25 +19,28 @@ function Artist() {
   ];
 
   return (
-    <div className="container">
-      <h2 className="mb-4">Artist Page</h2>
-      <div className="row">
-        {artists.map((artist) => (
-          <div key={artist.id} className="col-md-4 mb-4">
-            <div className="card">
-              <div className="card-body">
-                <h3 className="card-title">{artist.name}</h3>
-                <ul className="list-group list-group-flush">
-                  {artist.songs.map((song, index) => (
-                    <li key={index} className="list-group-item">{song}</li>
-                  ))}
-                </ul>
-                {/* Pulsante dedicato per ciascun artista */}
-                <Link to={`/artisti/${artist.name.replace(/\s+/g, '')}`} className="btn btn-primary mt-3">Vai a {artist.name}</Link>
+    <div className="artist-page">
+      <div className="container">
+      <Link to="/" className="back-to-home">Torna alla Home</Link>
+        <h2 className="artist-title mb-4">Artist Page</h2>
+        <div className="row">
+          {artists.map((artist) => (
+            <div key={artist.id} className="col-md-4 mb-4">
+              <div className="artist-card card">
+                <div className="card-body">
+                  <h3 className="card-title">{artist.name}</h3>
+                  <ul className="list-group list-group-flush">
+                    {artist.songs.map((song, index) => (
+                      <li key={index} className="list-group-item">{song}</li>
+                    ))}
+                  </ul>
+                  {/* Pulsante dedicato per ciascun artista */}
+                  <Link to={`/artisti/${artist.name.replace(/\s+/g, '')}`} className="btn btn-primary mt-3">Vai a {artist.name}</Link>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

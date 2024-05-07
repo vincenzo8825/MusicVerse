@@ -16,7 +16,7 @@
 
 /* Hero Section */
 .hero-section {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?concert');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?music,gray');
   background-size: cover;
   background-position: center;
   padding: 10rem 0;
@@ -129,7 +129,7 @@
   color: #ffffff; /* Colore del testo */
   background-color: transparent; /* Colore di sfondo trasparente */
   border: 1px solid #343a40; /* Bordo solid */
-  font-size: 1rem; /* Dimensione del carattere */
+  font-size: 0.8rem; /* Dimensione del carattere */
   padding: 0.75rem 1.5rem; /* Spaziatura interna */
   border-radius: 0.25rem; /* Bordo arrotondato */
   transition: all 0.3s ease; /* Transizione per tutti i cambiamenti */
@@ -146,7 +146,7 @@
   color: #ffffff; /* Colore del testo */
   background-color: #ffc107; /* Colore di sfondo */
   border: none; /* Nessun bordo */
-  font-size: 1rem; /* Dimensione del carattere */
+  font-size: 0.8rem; /* Dimensione del carattere */
   padding: 0.75rem 1.5rem; /* Spaziatura interna */
   border-radius: 0.25rem; /* Bordo arrotondato */
   transition: all 0.3s ease; /* Transizione per tutti i cambiamenti */
@@ -157,29 +157,41 @@
  
   color: #ffffff; /* Colore del testo al passaggio del mouse */
 }
-
-
-/* Footer */
+/*footer*/
 .footer {
-  background-color: #212529;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #2f2f2f;
+  color: #fff;
+  padding: 1rem 0; /* Riduci il padding sopra e sotto */
+  text-align: center; /* Centra il testo e le icone */
 }
 
-.footer p {
-  margin-bottom: 0;
+.footer-container {
+  max-width: 800px; /* Riduci la larghezza massima */
+  margin: 0 auto;
 }
 
-
-
-
-/* Footer */
-.footer {
-  background-color: #212529;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.footer-heading {
+  font-size: 1.3rem; /* Riduci leggermente le dimensioni del titolo */
+  color: #ffc107;
+  margin-bottom: 0.5rem; /* Riduci lo spazio in basso */
 }
 
-.footer p {
-  margin-bottom: 0;
+.footer-text {
+  margin-bottom: 1.5rem; /* Riduci leggermente lo spazio in basso */
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center; 
+}
+
+.footer-social-icon {
+  font-size: 1.3rem; /* Riduci leggermente le dimensioni delle icone */
+  margin: 0 1rem; /* Aggiungi spazio tra le icone */
+  color: #ffc107;
+}
+
+.footer-copyright {
+  margin-top: 1rem;
+  font-size: 0.8rem;
 }

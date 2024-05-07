@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './../css/cssartisti/michealJackson.css';
 
 function MichaelJackson() {
   const [songTitle, setSongTitle] = useState('');
   const [lyrics, setLyrics] = useState('');
+  const [albums, setAlbums] = useState([]);
+
+  const apiKey = process.env.REACT_APP_API_KEY;
 
   const handleInputChange = (event) => {
     setSongTitle(event.target.value);
@@ -20,20 +24,44 @@ function MichaelJackson() {
       });
   };
 
+  const fetchAlbums = async () => {
+    try {
+      const response = await axios.get(`http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=Michael%20Jackson&api_key=${apiKey}&format=json`);
+      setAlbums(response.data?.topalbums?.album || []);
+    } catch (error) {
+      console.error('Si è verificato un errore nel recupero degli album:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchAlbums();
+  }, ); // Chiamata API degli album solo al caricamento iniziale
+
   return (
-    <div>
-      <h2>Michael Jackson</h2>
-      <div>
-        <p>Michael Joseph Jackson (August 29, 1958 – June 25, 2009) was an American singer, songwriter, and dancer. Dubbed the "King of Pop", he is regarded as one of the most significant cultural figures of the 20th century and one of the greatest entertainers.</p>
-        <p>His contributions to music, dance, and fashion, along with his publicized personal life, made him a global figure in popular culture for over four decades.</p>
-        <p>Here you can find information about Michael Jackson's life, career, and achievements.</p>
+    <div className="mj-container">
+      <h2 className="mj-title">Michael Jackson</h2>
+      <div className="mj-info">
+        <p>Michael Jackson è stato un cantante, compositore e ballerino statunitense. Conosciuto come il "Re del Pop", Jackson è considerato uno dei più grandi e influenti artisti della musica popolare.</p>
+        <p>Con una carriera che ha attraversato cinque decenni, Jackson ha lasciato un'impronta indelebile sulla cultura popolare con le sue performance straordinarie, la sua musica innovativa e il suo impatto sociale.</p>
+        <p>Qui puoi trovare informazioni sulla vita, la carriera e i successi di Michael Jackson.</p>
       </div>
-      <div>
+      <div className="mj-search">
         <input type="text" value={songTitle} onChange={handleInputChange} placeholder="Titolo della canzone" />
         <button onClick={searchLyrics}>Cerca testo della canzone</button>
+      </div>
+      <div className="mj-lyrics">
+        <h3>Testo della canzone:</h3>
+        <p>{lyrics}</p>
+      </div>
+      <div className="mj-albums">
+        <h3>Copertine degli album:</h3>
         <div>
-          <h3>Testo della canzone:</h3>
-          <p>{lyrics}</p>
+          {albums.map(album => (
+            <div key={album.name} className="mj-album">
+              <img src={album.image[2]['#text']} alt={album.name} />
+              <p>{album.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

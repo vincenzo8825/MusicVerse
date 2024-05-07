@@ -1,0 +1,89 @@
+/* beyonce.css */
+
+.beyonce-container {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.beyonce-title {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 2rem;
+}
+
+.beyonce-info {
+    background-color: #2f2f2f;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.beyonce-info p {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.beyonce-search {
+    margin-bottom: 1rem;
+}
+
+.beyonce-search input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    margin-right: 0.5rem;
+}
+
+.beyonce-search button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.beyonce-lyrics {
+    margin-top: 2rem;
+}
+
+.beyonce-lyrics h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+.beyonce-lyrics p {
+    color: #ffc107;
+}
+
+.beyonce-albums {
+    margin-top: 2rem;
+    display: flex; /* Utilizza flexbox per allineare gli album in righe */
+    flex-wrap: wrap; /* Per consentire il wrapping degli album su più righe */
+}
+
+.beyonce-album {
+    margin-bottom: 1rem;
+    width: calc(33.33% - 1rem); /* Imposta la larghezza massima per ogni album */
+    max-width: 300px; /* Imposta la larghezza massima per ogni album */
+    flex: 1 1 33.33%; /* Per distribuire uniformemente gli album su ogni riga */
+}
+
+.beyonce-album img {
+    width: 100%;
+    height: auto; /* Imposta l'altezza automaticamente per mantenere l'aspetto proporzionato */
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.beyonce-album p {
+    color: #fff;
+}
+
+/* beyonce.css */
+
+  
+  

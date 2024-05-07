@@ -1,0 +1,88 @@
+/* frank-sinatra.css */
+
+.frank-sinatra-container {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .frank-sinatra-title {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 2rem;
+  }
+  
+  .frank-sinatra-info {
+    background-color: #2f2f2f;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .frank-sinatra-info p {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .frank-sinatra-search {
+    margin-bottom: 1rem;
+  }
+  
+  .frank-sinatra-search input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    margin-right: 0.5rem;
+  }
+  
+  .frank-sinatra-search button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .frank-sinatra-lyrics {
+    margin-top: 2rem;
+  }
+  
+  .frank-sinatra-lyrics h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .frank-sinatra-lyrics p {
+    color: #fff;
+  }
+  
+  .frank-sinatra-albums {
+    margin-top: 2rem;
+  }
+  
+  .frank-sinatra-albums h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .frank-sinatra-album {
+    margin-bottom: 1rem;
+  }
+  
+  .frank-sinatra-album img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .frank-sinatra-album p {
+    color: #fff;
+  }
+  
+  /* frank-sinatra.css */
+  

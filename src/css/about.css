@@ -1,0 +1,49 @@
+/* about.css */
+
+.about-container {
+    margin: 0 auto;
+    padding: 2rem;
+    background-image: url('https://source.unsplash.com/1600x900/?music,gray');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 2rem;
+  }
+  
+  .about-content {
+    background-color: #2f2f2f;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .about-content p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .about-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .back-to-home {
+    display: block;
+    margin-bottom: 20px;
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-to-home:hover {
+    text-decoration: underline;
+  }
+  
+  /* about.css */
+  

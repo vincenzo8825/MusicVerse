@@ -35,7 +35,7 @@ function Navbar() {
               <Link className="nav-link" to="/artist">Artist</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/music">Music</Link>
+              <Link className="nav-link" to="/about">About</Link> {/* Modifica il percorso qui */}
             </li>
           </ul>
           <form className="d-flex" onSubmit={handleSearch}>

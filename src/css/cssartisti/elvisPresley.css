@@ -1,0 +1,88 @@
+/* elvis-presley.css */
+
+.elvis-presley-container {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .elvis-presley-title {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 2rem;
+  }
+  
+  .elvis-presley-info {
+    background-color: #2f2f2f;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .elvis-presley-info p {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .elvis-presley-search {
+    margin-bottom: 1rem;
+  }
+  
+  .elvis-presley-search input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    margin-right: 0.5rem;
+  }
+  
+  .elvis-presley-search button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .elvis-presley-lyrics {
+    margin-top: 2rem;
+  }
+  
+  .elvis-presley-lyrics h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .elvis-presley-lyrics p {
+    color: #fff;
+  }
+  
+  .elvis-presley-albums {
+    margin-top: 2rem;
+  }
+  
+  .elvis-presley-albums h3 {
+    font-size: 1rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .elvis-presley-album {
+    margin-bottom: 1rem;
+  }
+  
+  .elvis-presley-album img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .elvis-presley-album p {
+    color: #fff;
+  }
+  
+  /* elvis-presley.css */
+  
