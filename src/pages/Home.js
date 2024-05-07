@@ -13,7 +13,7 @@ function Home() {
   useEffect(() => {
     const fetchTopArtists = async () => {
       try {
-        const response = await fetch(`http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${apiKey}&format=json&limit=10`);
+        const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=${apiKey}&format=json&limit=10`);
         if (!response.ok) {
           throw new Error('Errore nella richiesta HTTP: ' + response.status);
         }
@@ -26,7 +26,7 @@ function Home() {
 
     const fetchTopTracks = async () => {
       try {
-        const response = await fetch(`http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=${apiKey}&format=json&limit=10`);
+        const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=${apiKey}&format=json&limit=10`);
         if (!response.ok) {
           throw new Error('Errore nella richiesta HTTP: ' + response.status);
         }
@@ -40,7 +40,7 @@ function Home() {
     const fetchSimilarArtists = async () => {
       try {
         const artistName = 'Ed Sheeran';
-        const response = await fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${encodeURIComponent(artistName)}&api_key=${apiKey}&format=json&limit=5`);
+        const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${encodeURIComponent(artistName)}&api_key=${apiKey}&format=json&limit=5`);
         if (!response.ok) {
           throw new Error('Errore nella richiesta HTTP: ' + response.status);
         }
