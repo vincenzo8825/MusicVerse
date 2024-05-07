@@ -26,7 +26,7 @@ function Madonna() {
 
   const fetchAlbums = async () => {
     try {
-      const response = await axios.get(`http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=Madonna&api_key=${apiKey}&format=json`);
+      const response = await axios.get(`https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=Madonna&api_key=${apiKey}&format=json`);
       setAlbums(response.data?.topalbums?.album || []);
     } catch (error) {
       console.error('Si è verificato un errore nel recupero degli album:', error);
