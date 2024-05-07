@@ -83,9 +83,7 @@ function Home() {
             {topArtists.map(artist => (
               <div key={artist.name} className="col-md-4 mb-4">
                 <div className="card h-100">
-                  {[3]['#text'] && (
-                    <img src={artist.image[3]['#text']} alt={artist.name} className="card-img-top" />
-                  )}
+                  
                   <div className="card-body">
                     <h5 className="card-title">{artist.name}</h5>
                     <p className="card-text">Ascolti totali: {artist.playcount}</p>
@@ -107,9 +105,7 @@ function Home() {
             {topTracks.map(track => (
               <div key={track.name} className="col-md-4 mb-4">
                 <div className="card h-100">
-                  {[3]['#text'] && (
-                    <img src={track.image[3]['#text']} alt={track.name} className="card-img-top" />
-                  )}
+                  
                   <div className="card-body">
                     <h5 className="card-title">{track.name}</h5>
                     <p className="card-text">Artista: {track.artist.name}</p>
