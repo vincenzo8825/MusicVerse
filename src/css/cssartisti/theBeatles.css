@@ -12,14 +12,14 @@
   }
   
   .beatles-info {
-    background-color: #f5f5f5;
+    background-color: #333;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
   }
   
   .beatles-info p {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 1rem;
   }
   
